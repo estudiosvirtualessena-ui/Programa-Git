@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Gestión de categorías - Distribuidora de Huevos</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Distribuidora de Huevos</h1>
+
+        <p>Gestión de categorías</p>
+
+    </header>
+
+
+    <nav>
+
+        <a href="panel-principal.html">Inicio</a>
+
+        <a href="usuarios.html">Usuarios</a>
+
+        <a href="categorias.html">Categorías</a>
+
+        <a href="productos.html">Productos</a>
+
+        <a href="inventario.html">Inventario</a>
+
+        <a href="registrar-venta.html">Registrar venta</a>
+
+        <a href="consulta-ventas.html">Consulta de ventas</a>
+
+        <a href="index.html">Cerrar sesión</a>
+
+    </nav>
+
+
+    <main>
+
+        <h2>Categorías registradas</h2>
+
+
+        <table border="1">
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Nombre de categoría</th>
+                    <th>Descripción</th>
+                    <th>Estado</th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>001</td>
+
+                    <td>Huevos blancos</td>
+
+                    <td>Huevos de gallina de color blanco</td>
+
+                    <td>Activo</td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>002</td>
+
+                    <td>Huevos criollos</td>
+
+                    <td>Huevos provenientes de gallinas criollas</td>
+
+                    <td>Activo</td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>003</td>
+
+                    <td>Huevos especiales</td>
+
+                    <td>Productos con características especiales</td>
+
+                    <td>Activo</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+
+        <h2>Registrar categoría</h2>
+
+
+        <form>
+
+            <p>
+
+                <label for="nombre-categoria">
+                    Nombre de la categoría:
+                </label>
+
+                <br>
+
+                <input
+                    type="text"
+                    id="nombre-categoria"
+                    name="nombre-categoria"
+                >
+
+            </p>
+
+
+            <p>
+
+                <label for="descripcion">
+                    Descripción:
+                </label>
+
+                <br>
+
+                <textarea
+                    id="descripcion"
+                    name="descripcion"
+                    rows="4"
+                    cols="40"
+                ></textarea>
+
+            </p>
+
+
+            <p>
+
+                <label for="estado">
+                    Estado:
+                </label>
+
+                <br>
+
+                <select id="estado" name="estado">
+
+                    <option value="activo">
+                        Activo
+                    </option>
+
+                    <option value="inactivo">
+                        Inactivo
+                    </option>
+
+                </select>
+
+            </p>
+
+
+            <button type="submit">
+                Registrar categoría
+            </button>
+
+        </form>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Distribuidora de Huevos - Sistema de gestión
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

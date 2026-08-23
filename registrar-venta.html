@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Registrar venta - Distribuidora de Huevos</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Distribuidora de Huevos</h1>
+
+        <p>Registro de ventas</p>
+
+    </header>
+
+
+    <nav>
+
+        <a href="panel-principal.html">Inicio</a>
+
+        <a href="usuarios.html">Usuarios</a>
+
+        <a href="categorias.html">Categorías</a>
+
+        <a href="productos.html">Productos</a>
+
+        <a href="inventario.html">Inventario</a>
+
+        <a href="registrar-venta.html">Registrar venta</a>
+
+        <a href="consulta-ventas.html">Consulta de ventas</a>
+
+        <a href="index.html">Cerrar sesión</a>
+
+    </nav>
+
+
+    <main>
+
+        <h2>Registrar nueva venta</h2>
+
+
+        <form>
+
+            <p>
+
+                <label for="cliente">
+                    Cliente:
+                </label>
+
+                <br>
+
+                <input
+                    type="text"
+                    id="cliente"
+                    name="cliente"
+                    placeholder="Nombre del cliente"
+                >
+
+            </p>
+
+
+            <p>
+
+                <label for="producto-venta">
+                    Producto:
+                </label>
+
+                <br>
+
+                <select
+                    id="producto-venta"
+                    name="producto-venta"
+                >
+
+                    <option value="">
+                        Seleccione un producto
+                    </option>
+
+                    <option value="huevo-aa">
+                        Huevo blanco AA
+                    </option>
+
+                    <option value="huevo-a">
+                        Huevo blanco A
+                    </option>
+
+                    <option value="huevo-criollo">
+                        Huevo criollo
+                    </option>
+
+                    <option value="huevo-especial">
+                        Huevo especial
+                    </option>
+
+                </select>
+
+            </p>
+
+
+            <p>
+
+                <label for="cantidad-venta">
+                    Cantidad:
+                </label>
+
+                <br>
+
+                <input
+                    type="number"
+                    id="cantidad-venta"
+                    name="cantidad-venta"
+                    min="1"
+                    placeholder="Ingrese la cantidad"
+                >
+
+            </p>
+
+
+            <p>
+
+                <label for="precio-venta">
+                    Precio unitario:
+                </label>
+
+                <br>
+
+                <input
+                    type="number"
+                    id="precio-venta"
+                    name="precio-venta"
+                    min="0"
+                    placeholder="Precio del producto"
+                >
+
+            </p>
+
+
+            <p>
+
+                <label for="forma-pago">
+                    Forma de pago:
+                </label>
+
+                <br>
+
+                <select
+                    id="forma-pago"
+                    name="forma-pago"
+                >
+
+                    <option value="">
+                        Seleccione una forma de pago
+                    </option>
+
+                    <option value="efectivo">
+                        Efectivo
+                    </option>
+
+                    <option value="transferencia">
+                        Transferencia
+                    </option>
+
+                    <option value="credito">
+                        Crédito
+                    </option>
+
+                </select>
+
+            </p>
+
+
+            <p>
+
+                <label for="observaciones-venta">
+                    Observaciones:
+                </label>
+
+                <br>
+
+                <textarea
+                    id="observaciones-venta"
+                    name="observaciones-venta"
+                    rows="4"
+                    cols="40"
+                    placeholder="Observaciones de la venta"
+                ></textarea>
+
+            </p>
+
+
+            <h3>Resumen de la venta</h3>
+
+
+            <table border="1">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio unitario</th>
+                        <th>Total</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Huevo blanco AA</td>
+                        <td>2</td>
+                        <td>$18.000</td>
+                        <td>$36.000</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+
+            <p>
+
+                <strong>
+                    Total de la venta: $36.000
+                </strong>
+
+            </p>
+
+
+            <button type="submit">
+                Registrar venta
+            </button>
+
+
+            <button type="reset">
+                Limpiar formulario
+            </button>
+
+        </form>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Distribuidora de Huevos - Sistema de gestión
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

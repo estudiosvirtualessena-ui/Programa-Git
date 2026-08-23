@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Gestión de productos - Distribuidora de Huevos</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Distribuidora de Huevos</h1>
+
+        <p>Gestión de productos</p>
+
+    </header>
+
+
+    <nav>
+
+        <a href="panel-principal.html">Inicio</a>
+
+        <a href="usuarios.html">Usuarios</a>
+
+        <a href="categorias.html">Categorías</a>
+
+        <a href="productos.html">Productos</a>
+
+        <a href="inventario.html">Inventario</a>
+
+        <a href="registrar-venta.html">Registrar venta</a>
+
+        <a href="consulta-ventas.html">Consulta de ventas</a>
+
+        <a href="index.html">Cerrar sesión</a>
+
+    </nav>
+
+
+    <main>
+
+        <h2>Productos registrados</h2>
+
+
+        <table border="1">
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Producto</th>
+                    <th>Categoría</th>
+                    <th>Presentación</th>
+                    <th>Precio</th>
+                    <th>Estado</th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>001</td>
+
+                    <td>Huevo blanco AA</td>
+
+                    <td>Huevos blancos</td>
+
+                    <td>30 unidades</td>
+
+                    <td>$18.000</td>
+
+                    <td>Activo</td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>002</td>
+
+                    <td>Huevo blanco A</td>
+
+                    <td>Huevos blancos</td>
+
+                    <td>30 unidades</td>
+
+                    <td>$16.000</td>
+
+                    <td>Activo</td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>003</td>
+
+                    <td>Huevo criollo</td>
+
+                    <td>Huevos criollos</td>
+
+                    <td>30 unidades</td>
+
+                    <td>$22.000</td>
+
+                    <td>Activo</td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>004</td>
+
+                    <td>Huevo especial</td>
+
+                    <td>Huevos especiales</td>
+
+                    <td>12 unidades</td>
+
+                    <td>$12.000</td>
+
+                    <td>Activo</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+
+        <h2>Registrar producto</h2>
+
+
+        <form>
+
+            <p>
+
+                <label for="nombre-producto">
+                    Nombre del producto:
+                </label>
+
+                <br>
+
+                <input
+                    type="text"
+                    id="nombre-producto"
+                    name="nombre-producto"
+                >
+
+            </p>
+
+
+            <p>
+
+                <label for="categoria">
+                    Categoría:
+                </label>
+
+                <br>
+
+                <select
+                    id="categoria"
+                    name="categoria"
+                >
+
+                    <option value="">
+                        Seleccione una categoría
+                    </option>
+
+                    <option value="blancos">
+                        Huevos blancos
+                    </option>
+
+                    <option value="criollos">
+                        Huevos criollos
+                    </option>
+
+                    <option value="especiales">
+                        Huevos especiales
+                    </option>
+
+                </select>
+
+            </p>
+
+
+            <p>
+
+                <label for="presentacion">
+                    Presentación:
+                </label>
+
+                <br>
+
+                <input
+                    type="text"
+                    id="presentacion"
+                    name="presentacion"
+                    placeholder="Ejemplo: 30 unidades"
+                >
+
+            </p>
+
+
+            <p>
+
+                <label for="precio">
+                    Precio:
+                </label>
+
+                <br>
+
+                <input
+                    type="number"
+                    id="precio"
+                    name="precio"
+                    min="0"
+                    placeholder="Ingrese el precio"
+                >
+
+            </p>
+
+
+            <p>
+
+                <label for="estado-producto">
+                    Estado:
+                </label>
+
+                <br>
+
+                <select
+                    id="estado-producto"
+                    name="estado-producto"
+                >
+
+                    <option value="activo">
+                        Activo
+                    </option>
+
+                    <option value="inactivo">
+                        Inactivo
+                    </option>
+
+                </select>
+
+            </p>
+
+
+            <button type="submit">
+                Registrar producto
+            </button>
+
+        </form>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Distribuidora de Huevos - Sistema de gestión
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

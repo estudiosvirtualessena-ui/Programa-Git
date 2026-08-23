@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Inventario - Distribuidora de Huevos</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Distribuidora de Huevos</h1>
+
+        <p>Control de inventario</p>
+
+    </header>
+
+
+    <nav>
+
+        <a href="panel-principal.html">Inicio</a>
+
+        <a href="usuarios.html">Usuarios</a>
+
+        <a href="categorias.html">Categorías</a>
+
+        <a href="productos.html">Productos</a>
+
+        <a href="inventario.html">Inventario</a>
+
+        <a href="registrar-venta.html">Registrar venta</a>
+
+        <a href="consulta-ventas.html">Consulta de ventas</a>
+
+        <a href="index.html">Cerrar sesión</a>
+
+    </nav>
+
+
+    <main>
+
+        <h2>Inventario de productos</h2>
+
+
+        <table border="1">
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Producto</th>
+
+                    <th>Presentación</th>
+
+                    <th>Stock disponible</th>
+
+                    <th>Stock mínimo</th>
+
+                    <th>Estado</th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>001</td>
+
+                    <td>Huevo blanco AA</td>
+
+                    <td>30 unidades</td>
+
+                    <td>85</td>
+
+                    <td>20</td>
+
+                    <td>Disponible</td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>002</td>
+
+                    <td>Huevo blanco A</td>
+
+                    <td>30 unidades</td>
+
+                    <td>60</td>
+
+                    <td>20</td>
+
+                    <td>Disponible</td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>003</td>
+
+                    <td>Huevo criollo</td>
+
+                    <td>30 unidades</td>
+
+                    <td>12</td>
+
+                    <td>20</td>
+
+                    <td>Stock bajo</td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>004</td>
+
+                    <td>Huevo especial</td>
+
+                    <td>12 unidades</td>
+
+                    <td>0</td>
+
+                    <td>10</td>
+
+                    <td>Agotado</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+
+        <h2>Actualizar inventario</h2>
+
+
+        <form>
+
+            <p>
+
+                <label for="producto-inventario">
+                    Producto:
+                </label>
+
+                <br>
+
+                <select
+                    id="producto-inventario"
+                    name="producto-inventario"
+                >
+
+                    <option value="">
+                        Seleccione un producto
+                    </option>
+
+                    <option value="001">
+                        Huevo blanco AA
+                    </option>
+
+                    <option value="002">
+                        Huevo blanco A
+                    </option>
+
+                    <option value="003">
+                        Huevo criollo
+                    </option>
+
+                    <option value="004">
+                        Huevo especial
+                    </option>
+
+                </select>
+
+            </p>
+
+
+            <p>
+
+                <label for="cantidad">
+                    Cantidad:
+                </label>
+
+                <br>
+
+                <input
+                    type="number"
+                    id="cantidad"
+                    name="cantidad"
+                    min="0"
+                    placeholder="Ingrese la cantidad"
+                >
+
+            </p>
+
+
+            <p>
+
+                <label for="tipo-movimiento">
+                    Tipo de movimiento:
+                </label>
+
+                <br>
+
+                <select
+                    id="tipo-movimiento"
+                    name="tipo-movimiento"
+                >
+
+                    <option value="">
+                        Seleccione el movimiento
+                    </option>
+
+                    <option value="entrada">
+                        Entrada
+                    </option>
+
+                    <option value="salida">
+                        Salida
+                    </option>
+
+                </select>
+
+            </p>
+
+
+            <p>
+
+                <label for="observacion">
+                    Observación:
+                </label>
+
+                <br>
+
+                <textarea
+                    id="observacion"
+                    name="observacion"
+                    rows="4"
+                    cols="40"
+                    placeholder="Escriba una observación"
+                ></textarea>
+
+            </p>
+
+
+            <button type="submit">
+                Actualizar inventario
+            </button>
+
+        </form>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Distribuidora de Huevos - Sistema de gestión
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
